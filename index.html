@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disappearing Circles</title>
+
+  <style>
+
+    html, body {
+      height: 98%;
+      background-color: yellow;
+    }
+
+    .container {
+      height: 98%;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .circle {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 50px;
+    }
+
+    #red {
+      background-color: red;
+    }
+
+    #blue {
+      background-color: blue;
+    }
+
+    #green {
+      background-color: Chartreuse;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+
+    <div class="circle" id="red"></div>
+
+    <div class="circle" id="blue"></div>
+
+    <div class="circle" id="green"></div>
+
+  </div>
+  <script>
+
+    document.getElementById("red").onclick = () => {
+      document.getElementById("red").style.display = 'none';
+    }
+
+    document.getElementById("blue").onclick = () => {
+      document.getElementById("blue").style.display = 'none';
+    }
+
+    document.getElementById("green").onclick = () => {
+      document.getElementById("green").style.display = 'none';
+    }
+    
+  </script>
+  
+</body>
+</html>
